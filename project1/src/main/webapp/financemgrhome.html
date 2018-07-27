@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META Http-Equiv="Cache-Control" Content="no-cache">
+<META Http-Equiv="Pragma" Content="no-cache">
+<META Http-Equiv="Expires" Content="0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/button.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<link rel="icon" href="favicon-32x32.png" />
+
+
+<meta charset="ISO-8859-1">
+<title>Finance Manager Home</title>
+</head>
+<body>
+	<a href="index.html"> <img src="images/revature.png" alt="logo"
+		width="200" height="70" />
+	</a>
+	</br>
+	<form method="POST" action="logout.do">
+	<div>
+		<button type="submit" class="btn btn-danger" id="logout"
+			style="position: absolute; right: 0;">LOGOUT</button>
+			</div>
+	</form>
+	<div class="card text-center">
+		<div class="card-header">
+			<ul class="nav nav-tabs card-header-tabs">
+				<li class="nav-item">
+					<button type="submit" class="btn btn-primary" id="filterapp">Filter
+						By Approved</button>
+					<button type="submit" class="btn btn-primary" id="filterdeny">Filter
+						By Denied</button>
+					<button type="submit" class="btn btn-primary" id="filterpending">Filter
+						By Pending</button> 
+					<button type="submit" class="btn btn-primary" id="filterall">Show
+						All</button>
+						<a class="nav-link disabled"></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="card-body">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">Reimbursment ID</th>
+						<th scope="col">Amount</th>
+						<th scope="col">Submitted</th>
+						<th scope="col">Resolved</th>
+						<th scope="col">Description</th>
+						<th scope="col">Author</th>
+						<th scope="col">Resolver</th>
+						<th scope="col">Status</th>
+						<th scope="col">Type</th>
+						<th scope="col">Approve/Deny</th>
+					</tr>
+				</thead>
+				<tbody id="body">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script
+		src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/managerajax.js"></script>
+
+</body>
+</html>
